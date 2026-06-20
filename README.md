@@ -1,4 +1,4 @@
-# Local Food Wastage Management System
+# Local Food Wastage Management System  https://localfood-wastage-management-system.streamlit.app/
 
 ## Project Overview
 
@@ -39,7 +39,7 @@ The Local Food Wastage Management System is a Streamlit and MySQL based data ana
 5. SQL Analysis
 6. CRUD Operations
 
-## How to Run
+## How to Run https://localfood-wastage-management-system.streamlit.app/
 
 1. Install dependencies:
    pip install -r requirements.txt

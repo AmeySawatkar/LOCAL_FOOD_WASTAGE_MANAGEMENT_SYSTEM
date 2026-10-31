@@ -404,6 +404,7 @@ def kpi_card(icon, value, label, color="green", delta=""):
 if page == "📊 Dashboard":
     st.markdown('<div class="page-title">📊 Dashboard</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">Real-time overview of the food wastage management network</div>', unsafe_allow_html=True)
+    st.caption("🚀 Live Deployment | Docker • Amazon ECR • Kubernetes (Kind) • Argo CD")
 
     with st.spinner("Loading dashboard metrics..."):
         df_providers = run_query("SELECT COUNT(*) AS cnt FROM providers")

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: food-wastage-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: food-wastage-app
+  template:
+    metadata:
+      labels:
+        app: food-wastage-app
+    spec:
+      imagePullSecrets:
+        - name: ecr-secret
+      containers:
+        - name: food-wastage-app
+          image: 972472392445.dkr.ecr.ap-south-1.amazonaws.com/food-wastage-app:v1
+          ports:
+            - containerPort: 8501
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "768Mi"
+              cpu: "500m"

@@ -16,7 +16,7 @@ spec:
         - name: ecr-secret
       containers:
         - name: food-wastage-app
-          image: 972472392445.dkr.ecr.ap-south-1.amazonaws.com/food-wastage-app:v1
+          image: 972472392445.dkr.ecr.ap-south-1.amazonaws.com/food-wastage-app:e4bee70f99eb4a7394642e5be0fcc353fdfbce44
           ports:
             - containerPort: 8501
           resources:

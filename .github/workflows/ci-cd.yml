@@ -18,6 +18,7 @@ env:
 
 jobs:
   build-and-deploy:
+    if: ${{ vars.AWS_ROLE_ARN != '' }}
     name: Test, Build, Push and Update GitOps
     runs-on: ubuntu-latest
 
